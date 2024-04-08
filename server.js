@@ -37,5 +37,5 @@ app.use("/api/messages", messagesRoutes);
 
 
 server.listen(PORT, () =>
-  console.log(`Server started at http://localhost:${PORT}`)
+  console.log(`Server started`)
 );
