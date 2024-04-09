@@ -14,7 +14,7 @@ export const getRecipientSocketId = (recipientId) => {
 const userSocketMap = {};
 const io = new Server(server, {
   cors: {
-    origin: "https://6613e0525d02700d486677b0--social2app.netlify.app/",
+    origin: "https://6613e0525d02700d486677b0--social2app.netlify.app",
     methods: ["GET", "POST"],
   },
 });
