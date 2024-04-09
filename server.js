@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: "https://6613e0525d02700d486677b0--social2app.netlify.app",
+  origin: "https://social-media-app-pg.netlify.app",
   credentials: true
 }
 
