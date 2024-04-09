@@ -4,10 +4,9 @@ const generateTokenAndSetCookie = (userId,res) => {
     const token = jwt.sign({userId},process.env.JWT_SECRET,{
         expiresIn: '15d',
     });
-    console.log(res.cookie);
     res.cookie('jwt',token,{
+        expires: new Date(Date.now() + 15*24*60*60*1000),
         httpOnly: true, 
-        maxAge:15*24*60*60*1000,
     });
 
     return token;
