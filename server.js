@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://6613e0525d02700d486677b0--social2app.netlify.app",
   credentials: true
 }
 
@@ -37,5 +37,5 @@ app.use("/api/messages", messagesRoutes);
 
 
 server.listen(PORT, () =>
-  console.log(`Server started at http://localhost:${PORT}`)
+  console.log(`Server started`)
 );
