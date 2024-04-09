@@ -6,8 +6,9 @@ const generateTokenAndSetCookie = (userId,res) => {
     });
     res.cookie('jwt',token,{
         expires: new Date(Date.now() + 15*24*60*60*1000),
+        secure:true,
         httpOnly: true, 
-        sameSite:"None",
+        sameSite:"none",
     });
 
     return token;
